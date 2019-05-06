@@ -45,7 +45,7 @@ class App extends Component {
           <ListOfOptions
             features={this.props.features}
             selected={this.state.selected}
-            updateFeature={this.updateFeature}
+            updateFeature={this.updateFeature.bind(this)}
           />
           <UserSelections
             selected={this.state.selected}
